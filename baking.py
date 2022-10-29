@@ -41,7 +41,7 @@ def confirm_ingredients():  # String methods
     # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
     # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2
     print(ingredients)
-    ingredients.replace("milk","butter")
+    ingredients= ingredients.replace("milk","butter")
     # 2.6 Print `ingredients` to make sure the change stuck this time.
     print(ingredients)
 #confirm_ingredients()
@@ -56,14 +56,14 @@ def favorite_bake():  # User Input/Type conversion
     # Let's get some user input to decide what to bake!
     baked_good= input("What is your favorite baked good?")
     
-    print(baked_good)
+  
     # 3.1 Create a variable called `baked_good`, that saves the user's input to the question:
     # What is your favorite baked good?
 
     # 3.2 Create a second variable called `frequency` that asks the user:
     # Roughly how many times a month do you eat <baked_good>s? <-- use your `baked_good` variable in an f-string here
-    frequency=input("how many times a month do you eat <baked_good>s?")
-    print(frequency)
+    frequency=input(f"how many times a month do you eat {baked_good}s?")
+ 
     # When the user inputs a number, what data type is it saved as?
     # 3.3 Print out the _type_ of the `frequency` variable to check.
     print(type(frequency))
