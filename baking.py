@@ -40,8 +40,10 @@ def confirm_ingredients():  # String methods
     #print(ingredient_1, ingredient_2, ingredient_3, ingredient_4 )
     # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
     # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2
+    print(ingredients)
     ingredients.replace("milk","butter")
     # 2.6 Print `ingredients` to make sure the change stuck this time.
+    print(ingredients)
 #confirm_ingredients()
     # 2.7 That looks better. Let's make it official: use another string method to 
     # print the string in the `ingredients` variable in all-caps now that it's right
@@ -64,14 +66,12 @@ def favorite_bake():  # User Input/Type conversion
     print(frequency)
     # When the user inputs a number, what data type is it saved as?
     # 3.3 Print out the _type_ of the `frequency` variable to check.
-    print(type(frequency)) 
-
-
+    print(type(frequency))
     # 3.4 Uncomment the print statements below, and get them to run WITHOUT changing the content--
     # HINTS: 
   #What's missing from the first print statement to allow us to use a variable inside a string?
     # Use `type conversion` to fix the second one
-    print('Ooooh, {baked_good}s are delicious!')
+    print(f'Ooooh, {baked_good}s are delicious!')
     print(f'We recommend you eat {baked_good}s at least {int(frequency) * 2} times a month!')
     # print('Ooooh, {baked_good}s are delicious!')
     # print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
