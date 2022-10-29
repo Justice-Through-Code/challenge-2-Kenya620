@@ -49,7 +49,7 @@ def confirm_ingredients():  # String methods
 #confirm_ingredients()
 
 
-#def favorite_bake():  # User Input/Type conversion
+def favorite_bake():  # User Input/Type conversion
     # The beauty of these ingredients is that you can make tons with them. 
     # Let's get some user input to decide what to bake!
     baked_good= input("What is your favorite baked good?")
@@ -64,15 +64,15 @@ def confirm_ingredients():  # String methods
     print(frequency)
     # When the user inputs a number, what data type is it saved as?
     # 3.3 Print out the _type_ of the `frequency` variable to check.
-print(type(frequency)) 
+    print(type(frequency)) 
 
 
     # 3.4 Uncomment the print statements below, and get them to run WITHOUT changing the content--
     # HINTS: 
   #What's missing from the first print statement to allow us to use a variable inside a string?
     # Use `type conversion` to fix the second one
-print('Ooooh, {baked_good}s are delicious!')
-print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
+    print('Ooooh, {baked_good}s are delicious!')
+    print(f'We recommend you eat {baked_good}  at least {int(frequency) * 2} times a month!')
     # print('Ooooh, {baked_good}s are delicious!')
     # print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
 favorite_bake() 
