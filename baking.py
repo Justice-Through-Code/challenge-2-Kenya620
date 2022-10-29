@@ -40,7 +40,7 @@ def confirm_ingredients():  # String methods
     #print(ingredient_1, ingredient_2, ingredient_3, ingredient_4 )
     # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
     # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2
-    print(ingredients.replace("milk","butter"))
+    ingredients.replace("milk","butter")
     # 2.6 Print `ingredients` to make sure the change stuck this time.
 #confirm_ingredients()
     # 2.7 That looks better. Let's make it official: use another string method to 
@@ -53,8 +53,8 @@ def favorite_bake():  # User Input/Type conversion
     # The beauty of these ingredients is that you can make tons with them. 
     # Let's get some user input to decide what to bake!
     baked_good= input("What is your favorite baked good?")
-    bake="strawberry cake"
-    print(bake)
+    
+    print(baked_good)
     # 3.1 Create a variable called `baked_good`, that saves the user's input to the question:
     # What is your favorite baked good?
 
@@ -72,7 +72,7 @@ def favorite_bake():  # User Input/Type conversion
   #What's missing from the first print statement to allow us to use a variable inside a string?
     # Use `type conversion` to fix the second one
     print('Ooooh, {baked_good}s are delicious!')
-    print(f'We recommend you eat {baked_good}  at least {int(frequency) * 2} times a month!')
+    print(f'We recommend you eat {baked_good}s at least {int(frequency) * 2} times a month!')
     # print('Ooooh, {baked_good}s are delicious!')
     # print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
 #favorite_bake() 
